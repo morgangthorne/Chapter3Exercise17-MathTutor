@@ -23,7 +23,7 @@ int main()
 
     //Output for the question
     cout << "Solve the equation below:" << endl;
-    cout << setw(10) << x << endl << setw(7) << "+" << y << endl << "Press any key to check your answer: ";
+    cout << setw(10) << x << endl << setw(7) << "+" << y << endl << "Press Enter to check your answer: ";
     
     //Allows user to enter anykey they want to check their answer
     cin.ignore();
@@ -31,7 +31,6 @@ int main()
     //Equation with answer
     cout << setw(10) << x << endl << setw(7) << "+" << y << endl << setw(10) << "---" << endl << setw(10) << sum << endl;
 
-    
 }
 
 
