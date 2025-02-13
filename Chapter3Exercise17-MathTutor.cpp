@@ -1,20 +1,37 @@
-// Chapter3Exercise17-MathTutor.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Filename: Chapter3Exercise17-MathTutor
+Programmer: Morgan Thorne
+Date: February 2025
+Requirements:
+Write program that can be used as a math tutor
+1: Program should display two random numbers to be added
+2: Program should pause while students works on problem
+3: When student is ready they can press a key and the program will show correct answer
+*/
 
 #include <iostream>
+#include <iomanip>
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   //Variables for the equation
+    int x = 247;
+    int y = 129;
+    int sum = (x + y);
+
+    //Output for the question
+    cout << "Solve the equation below:" << endl;
+    cout << setw(10) << x << endl << setw(7) << "+" << y << endl << "Press any key to check your answer: ";
+    
+    //Allows user to enter anykey they want to check their answer
+    cin.ignore();
+
+    //Equation with answer
+    cout << setw(10) << x << endl << setw(7) << "+" << y << endl << setw(10) << "---" << endl << setw(10) << sum << endl;
+
+    
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
